@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/logout_screen.dart';
-import 'package:mygarage/mycars_screen.dart';
-import 'package:mygarage/profile_screen.dart';
-import 'package:mygarage/registration_screen.dart';
-import 'package:mygarage/settings_screen.dart';
+import 'package:mygarage/Screens/logout_screen.dart';
+import 'package:mygarage/Screens/mycars_screen.dart';
+import 'package:mygarage/Screens/profile_screen.dart';
+import 'package:mygarage/Screens/registration_screen.dart';
+import 'package:mygarage/Screens/settings_screen.dart';
 
 class MenuScreen extends StatefulWidget {
   const MenuScreen({Key? key}) : super(key: key);

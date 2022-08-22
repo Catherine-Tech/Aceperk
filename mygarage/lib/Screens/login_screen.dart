@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/home_screen.dart';
+import 'package:mygarage/Screens/home_screen.dart';
 // import 'package:mygarage/menu_screen.dart';
-import 'package:mygarage/resetpassword_screen.dart';
-import 'package:mygarage/signup_Screen.dart';
+import 'package:mygarage/Screens/resetpassword_screen.dart';
+import 'package:mygarage/Screens/signup_screen.dart';
+// import 'package:mygarage/signup_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -65,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
 
               SizedBox(
-                height: 15,
+                height: 30,
               ),
 
               //password textfield

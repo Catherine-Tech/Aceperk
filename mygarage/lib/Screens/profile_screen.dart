@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/settings_screen.dart';
+import 'package:mygarage/Screens/settings_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -99,7 +99,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               buildprofiletext('Full name', 'Juma Cate'),
               buildprofiletext('E-mail', 'jcate@flutter.com'),
-              buildprofiletext('Password', '.......'),
+              // buildprofiletext('Password', '.......'),
               buildprofiletext('Residence', 'Juja,kenya'),
             ],
           ),

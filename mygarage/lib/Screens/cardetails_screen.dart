@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/registration1_screen.dart';
+import 'package:mygarage/Screens/registration1_screen.dart';
 
 class CardetailsScreen extends StatefulWidget {
   const CardetailsScreen({Key? key}) : super(key: key);
@@ -12,29 +12,29 @@ class _CardetailsScreenState extends State<CardetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      //   elevation: 1,
-      //   leading: IconButton(
-      //     onPressed: () {
-      //       Navigator.of(context).pop();
-      //     },
-      //     icon: Icon(Icons.arrow_back),
-      //     color: Colors.blue.shade600,
-      //   ),
-      // ),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        elevation: 1,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(Icons.arrow_back),
+          color: Colors.blue.shade600,
+        ),
+      ),
       body: Container(
         child: ListView(
           children: [
             // Padding(
             //   padding: const EdgeInsets.only(right: 275),
                Padding(
-                 padding: const EdgeInsets.only(right: 20),
+                 padding: const EdgeInsets.only(right: 10),
                  child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      width: 150,
+                      width: 200,
                       height: 150,
                       decoration: BoxDecoration(
                         shape: BoxShape.rectangle,
@@ -50,6 +50,7 @@ class _CardetailsScreenState extends State<CardetailsScreen> {
                     Column(
                       
               children: [
+               
                 
                   // Padding(
                   //   padding: const EdgeInsets.only(top: 10,right: 10),
@@ -67,7 +68,7 @@ class _CardetailsScreenState extends State<CardetailsScreen> {
               height: 10,
             ),
             Container(
-              height: 520,
+              height: 500,
               decoration: BoxDecoration(
                 image: DecorationImage(image: AssetImage('assets/icon/Logo2.png'),
                 fit: BoxFit.cover),
@@ -121,9 +122,9 @@ class _CardetailsScreenState extends State<CardetailsScreen> {
 
   Widget buildcontainercolumn(String title) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.only(bottom: 10,left: 20),
       child: Container(
-                    width: 150,
+                    width: 120,
                     height: 40,
                     decoration: BoxDecoration(
                       color: Color(0xffF4DEF3),
@@ -131,7 +132,7 @@ class _CardetailsScreenState extends State<CardetailsScreen> {
                       // borderRadius: BorderRadius.all(Radius.circular(20)),
                     ),
                    
-                     padding: const EdgeInsets.only(top: 2,left: 10),
+                     padding: const EdgeInsets.only(top: 20,left: 20),
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -146,11 +147,11 @@ class _CardetailsScreenState extends State<CardetailsScreen> {
 
   Widget buildtextfieldcolumn(String labeltext,String placeholder) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 35,top: 15),
+      padding: const EdgeInsets.only(bottom: 35,top: 15,right: 40,left: 20),
       child: TextField(
       
                    decoration: InputDecoration(
-          contentPadding: EdgeInsets.only(bottom: 10 ,left: 10,right: 20),
+          contentPadding: EdgeInsets.only(bottom: 5 ,left: 10,right: 20),
           labelText: labeltext,
           labelStyle: TextStyle(
             fontSize: 20,

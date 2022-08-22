@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/login_screen.dart';
+import 'package:mygarage/Screens/login_screen.dart';
 class ResetpasswordScreen extends StatefulWidget {
   ResetpasswordScreen({Key? key}) : super(key: key);
 

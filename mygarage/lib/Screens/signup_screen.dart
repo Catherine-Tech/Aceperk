@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/home_screen.dart';
+import 'package:mygarage/Screens/home_screen.dart';
+// import 'package:mygarage/Screens/home_screen.dart'en.dart';
 // import 'package:mygarage/home_screen.dart';
 // import 'package:mygarage/menu_screen.dart';
 class SignupScreen extends StatefulWidget {
@@ -155,7 +156,7 @@ class _SignupScreenState extends State<SignupScreen> {
             
                        
                         Padding(
-                          padding: EdgeInsets.only(left: 530),
+                          padding: EdgeInsets.only(left: 570),
                            
                              child: Row(
                               children: [

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:mygarage/login_screen.dart';
-import 'package:mygarage/splash_screen.dart';
+// import 'package:mygarage/Screens/splash_screen.dart';
+import 'package:mygarage/Screens/splash_screen.dart';
 // import 'package:mygarage/login_screen.dart';
 // import 'package:mygarage/splash_screen.dart';
 

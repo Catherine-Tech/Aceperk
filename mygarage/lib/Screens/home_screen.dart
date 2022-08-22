@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/menu_screen.dart';
+import 'package:mygarage/Screens/menu_screen.dart';
 // import 'package:mygarage/menu_screen.dart';
 
 
@@ -10,8 +10,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: const Text('Home'),
-        backgroundColor: Color(0xff72C7E2),
+        
+        backgroundColor: Colors.blue[200]
       ),
       drawer: const MenuScreen(),
       body: Container(

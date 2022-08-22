@@ -1,5 +1,6 @@
 import 'dart:io';
-
+import 'package:url_launcher/link.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/src/foundation/key.dart';
@@ -287,13 +288,42 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                             color: Colors.blue,
                                           ),
                                         ),
+                                      
                                       ],
                                     ),
                                   ),
                                 ),
+                               
                               ],
                             ),
                           ),
+                           SizedBox(height: 10,),
+                           Row(
+                            children: [
+                              Text('Declaration: '),
+                              Link(
+                                target: LinkTarget.blank,
+                              uri:Uri.parse('https://www.freeprivacypolicy.com/live/958eadda-c2f5-4bac-9305-5b7c903746fc'),
+                                builder: (context,followLink) =>
+                                 MouseRegion(
+                                  cursor: SystemMouseCursors.click,
+                                   child: GestureDetector(
+                                      onTap: followLink,
+                                      child: Text('Privacy and Policy',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 14,
+                                        color: Colors.blue,
+                                        fontStyle: FontStyle.italic
+                                      ),),
+                                    ),
+                                 ),
+                              ),
+                              
+                              
+                            ],
+                           ),
+                             
                         ],
                       ),
                     );
@@ -354,12 +384,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Notify me',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.grey[400],
-                    ),),
+                    Text(
+                      'Notify me',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.grey[400],
+                      ),
+                    ),
                     Switch(
                         value: false,
                         onChanged: (bool state) {

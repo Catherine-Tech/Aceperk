@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mygarage/cardetails_screen.dart';
+import 'package:mygarage/Screens/cardetails_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);
@@ -46,17 +46,18 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 ),
               ),
             ),
+           
             SizedBox(
               height: 10,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 40),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [
                   Container(
-                    height: 100,
-                    width: 800,
+                    height: 80,
+                    width: 1200,
                     color: Color(0xff72C7E2),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -64,15 +65,15 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         Text(
                           'Registration code...',
                           style: TextStyle(
-                            fontSize: 36,
+                            fontSize: 26,
                           ),
                         ),
                       ],
                     ),
                   ),
                   Positioned(
-                    width: 200,
-                    height: 50,
+                    width: 150,
+                    height: 40,
                     right: -20,
                     child: GestureDetector(
                       onTap: () {
@@ -89,7 +90,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         width: 150,
                         height: 40,
                         color: Colors.white,
-                        child: Center(child: Text('ADD YOUR CAR...')),
+                        child: Center(child: Text('ADD YOUR CAR...',
+                        style: TextStyle(fontSize: 20,
+                        fontWeight: FontWeight.w100),)),
                       ),
                     ),
                   ),

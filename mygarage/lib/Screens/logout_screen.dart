@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:mygarage/home_screen.dart';
+import 'package:mygarage/Screens/home_screen.dart';
 // import 'package:mygarage/menu_screen.dart';
-import 'package:mygarage/splash_screen.dart';
+import 'package:mygarage/Screens/splash_screen.dart';
 
 class LogoutScreen extends StatefulWidget {
   const LogoutScreen({Key? key}) : super(key: key);
@@ -38,7 +38,7 @@ class _LogoutScreenState extends State<LogoutScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(10, 40, 10, 10),
+              padding: const EdgeInsets.fromLTRB(10, 30, 10, 10),
               child: Column(
                 children: [
                   Center(
